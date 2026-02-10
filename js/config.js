@@ -52,4 +52,6 @@ const librarySheetURL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQ_lQXI
 /* STEP 2 - configuring the webpage */
 
 // app title on navbar
-const appName = 'JONOLIST'
+const appEmoji = '📋'
+const appName = 'LOGLISTS'
+
