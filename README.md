@@ -1,4 +1,4 @@
-# jonolist
+# loglists
 
 a flexible list applet for Alpine.js that allows searching and sorting, as well as filtering by column, then displays the data in the form of a table
 
