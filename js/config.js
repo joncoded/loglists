@@ -1,4 +1,4 @@
-/* jonolist/config.js */
+/* loglists/config.js */
 
 /* STEP 1 - configuring the data source */
 
@@ -53,5 +53,5 @@ const librarySheetURL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQ_lQXI
 
 // app title on navbar
 const appEmoji = '📋'
-const appName = 'LOGLISTS'
+const appName = 'LogLists'
 
