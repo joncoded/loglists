@@ -1,4 +1,4 @@
-/* jonolist/app.js
+/* loglists/app.js
 // handles the filtering and sorting of list data for display in a table
 */
 

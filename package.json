@@ -1,5 +1,5 @@
 {
-  "name": "jonolist",
+  "name": "loglists",
   "version": "1.0.0",
   "description": "a flexible list component for Alpine.js that allows searching and sorting, as well as filtering by column, then displays the data in the form of a table",
   "main": "app.js",
