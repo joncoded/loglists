@@ -1,78 +1,111 @@
-# loglists
+# LogLists
 
-a flexible list applet for Alpine.js that allows searching and sorting, as well as filtering by column, then displays the data in the form of a table
+logging rows of truth on spreadsheets for web layouts
 
-we can use either a JavaScript array with objects (with key-value pairs)
+![screenshot of a loglists library](./images/readme/screenshot2.png)
+
+a spreadsheet wrapper built with "Alpine.js" that allows "searches" and "sorts", as well as "filters" by field, then shows the rows in a grid on a "website"
+
+## Forewords
+
+I always wanted to use Google Sheets as a back-end (even though some would say it wasn't the best choice), so I made a front-end for it for "information" that did not need that much "security"!
+
+So, it can take a "Google Sheet" like this:
+
+![screenshot of google sheets](./images/readme/screenshot0.png)
+
+and turn it into this "library":
+
+![screenshot of a loglists library](./images/readme/screenshot2.png)
+
+We can also have a JavaScript array with "objects" ("key-value pairs")
 
 or 
 
-a Google spreadsheet to update data quickly and easily in real-time with no coding!
+a "Google Sheet" to freshen data quickly in real-time with no "coding"!
 
-## terminology
+## Hallmarks
 
-a **library** refers to a list of lists
+This web work has:
 
-a **dataset** refers to a list
+* a **library** (a "list of lists" which comes from a "workbook")
+* a **dataset** (a one-off "list" which comes from a "worksheet")
 
-## setup
+A sample of a "dataset":
 
-### using rawData for quick startup
+![screenshot of a loglists dataset](./images/readme/screenshot1.png)
 
-in config.js:
+and its spreadsheet equivalent:
 
-(1) modify the `rawData` variable according to taste
+![screenshot of its google sheets equivalent](./images/readme/screenshot3.png)
 
-(2) add/uncomment this line out: 
+## Runtimes
+
+Run the build on either:
+
+<a href="https://loglists.joncoded.com" target="_blank"><button>loglists.joncoded.com</button></a>
+
+or
+
+<a href="https://loglists.vercel.app" target="_blank"><button>loglists.vercel.app</button></a>
+
+## Setup
+
+### `rawData` for quick start-up
+
+in `config.js`:
+
+(1) tweak `rawData` to whatever 
+
+(2) "uncomment" this line out: 
 
 ```
 const librarySheetURL = ''
 ```
 
-(3) modify the `appName` variable if desired
+(3) tweak `appName` if needed
 
-(4) upload the contents to any web server (no build system required!)
+(4) upload to any web "server" (no "build system" needed!)
 
-### using Google sheets for easy data entry and editing
+### Google Sheets for quick "data entry" and tweaking
 
-// one-time setup steps
+One-time setup steps:
 
 * start a new [Google sheet](https://sheets.google.com)
-* ensure that the sheet has the first row as table column headers 
-* have at least one google "library" worksheet that lists all the pages with the following mandatory columns:   
-  * `id` = provides the unique identifier (key) for each row
+* see that the sheet has the first row as headers 
+* have at least one google "library" worksheet that shows all the pages, while needing the following columns:   
+  * `id` = provides the "unique key" for each row
   * `name` = the title
   * `description` = the content
   * `link` = the hashtag URL, e.g. index.html#mytable
   * `hidden-sheetURL` = the URL of the Google spreadsheet
-* on the Google worksheet, use _File > Share > Publish to web_ (a modal should appear)
-  * instead of _Entire document_, select the "library" worksheet 
-  * then, in the next dropdown, instead of "Web page", select _Tab-separated values (.tsv)_
-  * copy the URL located below the drop-down menus
-* use the "library" sheet to update the library
+* on the Google worksheet, go to _File > Share > Publish to web_ (a "modal" pop-up should appear)
+  * instead of _Entire document_, choose the "library" worksheet 
+  * then, in the next drop-down, instead of "Web page", select _Tab-separated values (.tsv)_
+  * copy the URL below the drop-down menus
+* go to the "library" sheet to tweak the library ("list of lists")
 
-in config.js:
+in `config.js`:
 
-* leave the `rawData` variable alone and modify the `librarySheetURL` variable to a Google sheet
+* let `rawData` be and tweak  `librarySheetURL` to a Google Sheet URL 
 
-// after this, no more "coding": just use Google sheets!
+After this, no more "coding" - only "crud" from Google Sheets
 
-## updating in Google sheets
+### CRUD-ing in Google Sheets
 
-so, to create new datasets, go back to the Google sheets workbook (or start a new one): 
+So, to make new "datasets", go back to the Google Sheets workbook (or start a new one): 
 
 * start a new worksheet with headers and data rows
-* on the Google worksheet, use _File > Share > Publish to web_ (a modal should appear)
+* on the Google worksheet, use _File > Share > Publish to web_ (a "modal" pop-up should show up)
   * instead of _Entire document_, select the "library" worksheet 
-  * then, in the next dropdown, instead of "Web page", select _Tab-separated values (.tsv)_
-  * copy the URL located below the drop-down menus
-* include this new worksheet in the "library" worksheet
-  * ensure that the `hidden-sheetURL` column contains that copied URL 
+  * then, in the next drop-down, instead of "Web page", select _Tab-separated values (.tsv)_
+  * take the URL below the drop-down menus
+  * the `hidden-sheetURL` column should have that URL 
 
-then, any update on the google sheets will result in a live update of the webpages!
+Then, any update on the google sheets will result in a live update of the webpages!
 
-## credits
+## Thanksgiving
 
-with help from
+With help from:
 
-* [zulfikarditya's blog post](https://medium.com/@zulfikarditya/alpine-js-the-minimalist-javascript-framework-for-modern-web-development-839382997988) 
-* github copilot (for help in extracting google sheet data in `js/utils.js`)
+* [zulfikarditya](https://medium.com/@zulfikarditya/alpine-js-the-minimalist-javascript-framework-for-modern-web-development-839382997988) 
