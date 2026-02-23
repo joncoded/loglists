@@ -2,7 +2,7 @@
 
 logging rows of truth on spreadsheets for web layouts
 
-![screenshot of a loglists library](./images/readme/screenshot2.png)
+![screenshot of a loglists library](./public/images/readme/screenshot2.png)
 
 a spreadsheet wrapper built with "Alpine.js" that allows "searches" and "sorts", as well as "filters" by field, then shows the rows in a grid on a "website"
 
@@ -12,11 +12,11 @@ I always wanted to use Google Sheets as a back-end (even though some would say i
 
 So, it can take a "Google Sheet" like this:
 
-![screenshot of google sheets](./images/readme/screenshot0.png)
+![screenshot of google sheets](./public/images/readme/screenshot0.png)
 
 and turn it into this "library":
 
-![screenshot of a loglists library](./images/readme/screenshot2.png)
+![screenshot of a loglists library](./public/images/readme/screenshot2.png)
 
 We can also have a JavaScript array with "objects" ("key-value pairs")
 
@@ -33,11 +33,11 @@ This web work has:
 
 A sample of a "dataset":
 
-![screenshot of a loglists dataset](./images/readme/screenshot1.png)
+![screenshot of a loglists dataset](./public/images/readme/screenshot1.png)
 
 and its spreadsheet equivalent:
 
-![screenshot of its google sheets equivalent](./images/readme/screenshot3.png)
+![screenshot of its google sheets equivalent](./public/images/readme/screenshot3.png)
 
 ## Runtimes
 
